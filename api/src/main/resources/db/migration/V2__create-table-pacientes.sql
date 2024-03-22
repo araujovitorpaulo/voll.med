@@ -1,10 +1,9 @@
-create table medicos(
-
-    id bigint not null auto_increment,
+create table pacientes(
+    id bigint auto_increment not null,
     nome varchar(100) not null,
     email varchar(100) not null unique,
-    crm varchar(6) not null unique,
-    especialidade varchar(100) not null,
+    telefone varchar(15) not null unique,
+    cpf varchar(15) not null unique,
     logradouro varchar(100) not null,
     bairro varchar(100) not null,
     cep varchar(9) not null,
